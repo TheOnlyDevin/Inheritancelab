@@ -9,7 +9,10 @@ public class TestPerson {
 
         System.out.println("Here are Daves details " + dave.toString() );
 
-        Customer myCust = new Customer();
+        Customer myCust = new Customer( "Devin",  "Mervue",  "1234" ,  "abc1234",  true);
+
+        System.out.println("Details " + myCust.toString());
+
 
 
     }
