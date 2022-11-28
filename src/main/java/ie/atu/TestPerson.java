@@ -1,40 +1,16 @@
 package ie.atu;
 
 public class TestPerson {
-    private String name;
-    private String address;
-    private String number;
+    public static void main(String[] args) {
+        Person dave = new Person();
+        dave.setName("Dave");
+        dave.setAddress("Mervue");
+        dave.setNumber("1234");
 
-    public TestPerson() {
-    }
+        System.out.println("Here are Daves details " + dave.toString() );
 
-    public TestPerson(String name, String address, String number) {
-        this.name = name;
-        this.address = address;
-        this.number = number;
-    }
+        Customer myCust = new Customer();
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
     }
 }
